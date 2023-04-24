@@ -5,10 +5,17 @@ from datetime import datetime
 class HitCounter:
     def __init__(self, path: str):
         self._path = path
-        self._data = {
+        self.default_value = {
             "max_id": "0",
             "counter": dict()
         }
+        self._data = self.default_value
+        self._save_data()
+
+    def clear_data(self):
+        with open(self._path, "w") as f:
+            json.dump(self.default_value, f)
+        self._data = self.default_value
 
     def _read_data(self):
         with open(self._path, "r") as f:

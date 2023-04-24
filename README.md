@@ -28,12 +28,12 @@ This server in Flask can count visits on any site using cookies. Also it can giv
 <http://127.0.0.1:5000/api/counter/unique/all>
 
 2. Unique visitors for exactly date<br>
-<http://127.0.0.1:5000/api/counter/unique/<year>/<month>/<day>>
-<http://127.0.0.1:5000/api/counter/unique/<year>/<month>>
-<http://127.0.0.1:5000/api/counter/unique/<year>>
+<http://127.0.0.1:5000/api/counter/unique/2023/04/24><br>
+<http://127.0.0.1:5000/api/counter/unique/2023/04><br>
+<http://127.0.0.1:5000/api/counter/unique/2023>
 3. Not unique visitors for all time<br>
 <http://127.0.0.1:5000/api/counter/not_unique/all>
 4. Not unique visitors for exactly date<br>
-<http://127.0.0.1:5000/api/counter/not_unique/<year>/<month>/<day>>
-<http://127.0.0.1:5000/api/counter/not_unique/<year>/<month>>
-<http://127.0.0.1:5000/api/counter/not_unique/<year>>
+<http://127.0.0.1:5000/api/counter/not_unique/2023/04/24><br>
+<http://127.0.0.1:5000/api/counter/not_unique/2023/04><br>
+<http://127.0.0.1:5000/api/counter/not_unique/2023>
